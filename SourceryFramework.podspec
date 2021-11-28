@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
   s.source       = { :http => "https://github.com/krzysztofzablocki/Sourcery/releases/download/#{s.version}/sourcery-#{s.version}.zip" }
 
   s.source_files = "SourceryFramework/Sources/**/*.swift"
-  
+
   s.osx.deployment_target  = '10.11'
-  
+  s.ios.deployment_target = '9.0'
+
   s.dependency 'SourceryUtils'
   s.dependency 'SourceryRuntime'
 end
